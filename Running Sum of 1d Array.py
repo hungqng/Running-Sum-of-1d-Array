@@ -27,3 +27,6 @@ class Solution:
 
         # Solution 4
         return [sum(nums[:i+1]) for i in range(len(nums))]
+
+        # Solution 5
+        return accumulate(nums)
