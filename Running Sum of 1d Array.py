@@ -24,3 +24,6 @@ class Solution:
         for i in range(1, len(nums)):
             nums[i] += nums[i-1]
         return nums
+
+        # Solution 4
+        return [sum(nums[:i+1]) for i in range(len(nums))]
