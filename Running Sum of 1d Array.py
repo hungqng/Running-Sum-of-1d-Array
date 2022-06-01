@@ -19,3 +19,8 @@ class Solution:
         for i in range(1, len(nums)):
             result.append(result[-1]+nums[i])
         return result
+
+        # Solution 3
+        for i in range(1, len(nums)):
+            nums[i] += nums[i-1]
+        return nums
